@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{fa51192d-769e-4d54-9aa4-0567e51a9bb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{7ca570ec-d0eb-4eaf-8733-0ef6f11e8d17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="configs">
+      <UniqueIdentifier>{e1adbf6b-2edd-439b-afc4-f6ef707cf2f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{275cce25-0815-4285-bb92-84526c2cd7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\imgui">
+      <UniqueIdentifier>{2953bc28-9278-47a6-a851-bfb269dce728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{d07b41c3-a48d-4c78-b14a-f1d86e8e80d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\fonts">
+      <UniqueIdentifier>{1362650b-2f52-4767-8213-c77ae8ad0fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\images">
+      <UniqueIdentifier>{6769a42e-c0b7-4b5b-aee8-a0f451abe4e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\sounds">
+      <UniqueIdentifier>{e6dc9267-b88c-4104-bff2-4775f32f1d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets\images\green">
+      <UniqueIdentifier>{961294af-d2cf-4bcc-ae37-a5e0c1338356}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="assets\fonts\mario.otf">
+      <Filter>assets\fonts</Filter>
+    </Font>
+    <Font Include="assets\fonts\megaman.ttf">
+      <Filter>assets\fonts</Filter>
+    </Font>
+    <Font Include="assets\fonts\tech.ttf">
+      <Filter>assets\fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\images\green\tile_bush.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_rock_bl.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_rock_bm.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_rock_br.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_rock_tl.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_rock_tm.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_rock_tr.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_tree_bl.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_tree_br.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_tree_tl.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_tree_tm.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_tree_tr.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_bl.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_bm.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_br.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_ml.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_mm.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_mr.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_tl.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_tm.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\green\tile_water_tr.png">
+      <Filter>assets\images\green</Filter>
+    </Image>
+    <Image Include="assets\images\attack_down.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\attack_right.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\attack_up.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\explosion.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\item_heart.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\item_sword_right.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\item_sword_up.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\knight.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\run_down.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\run_right.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\run_up.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\stand_down.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\stand_right.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\stand_up.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\tektite.png">
+      <Filter>assets\images</Filter>
+    </Image>
+    <Image Include="assets\images\tile_black.png">
+      <Filter>assets\images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\sounds\EnemyDie.wav">
+      <Filter>assets\sounds</Filter>
+    </Media>
+    <Media Include="assets\sounds\EnemyHit.wav">
+      <Filter>assets\sounds</Filter>
+    </Media>
+    <Media Include="assets\sounds\GetItem.wav">
+      <Filter>assets\sounds</Filter>
+    </Media>
+    <Media Include="assets\sounds\LinkDie.wav">
+      <Filter>assets\sounds</Filter>
+    </Media>
+    <Media Include="assets\sounds\LinkHurt.wav">
+      <Filter>assets\sounds</Filter>
+    </Media>
+    <Media Include="assets\sounds\SwordSlash.wav">
+      <Filter>assets\sounds</Filter>
+    </Media>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\sounds\MusicPlay.ogg">
+      <Filter>assets\sounds</Filter>
+    </None>
+    <None Include="assets\sounds\MusicTitle.ogg">
+      <Filter>assets\sounds</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="vendor\imgui\imconfig.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imconfig-SFML.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imgui.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imgui_internal.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imgui-SFML.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imgui-SFML_export.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imstb_rectpack.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imstb_textedit.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\imgui\imstb_truetype.h">
+      <Filter>vendor\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Action.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Animation.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Assets.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Components.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Entity.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\EntityManager.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Enums.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameEngine.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Physics.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Scene.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SceneMenu.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScenePlay.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vec2.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="vendor\imgui\imgui.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\imgui\imgui-SFML.cpp">
+      <Filter>vendor\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Action.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Animation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Assets.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Entity.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EntityManager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameEngine.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Physics.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SceneMenu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScenePlay.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="configs\assets.txt">
+      <Filter>configs</Filter>
+    </Text>
+    <Text Include="configs\level1.txt">
+      <Filter>configs</Filter>
+    </Text>
+    <Text Include="configs\level2.txt">
+      <Filter>configs</Filter>
+    </Text>
+    <Text Include="configs\level3.txt">
+      <Filter>configs</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

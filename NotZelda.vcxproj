@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{76589e10-1656-4d4a-986d-25b8b7628a1e}</ProjectGuid>
+    <RootNamespace>NotZelda</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\temp\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)vendor\imgui;$(SFML_DIR)\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SFML_DIR)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(ProjectName)\bin\$(Platform)\temp\$(Configuration)\</IntDir>
+    <IncludePath>$(ProjectDir)vendor\imgui;$(SFML_DIR)\include;$(ProjectDir)include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SFML_DIR)\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /Y /I "$(ProjectDir)assets" "$(OutDir)assets"
+xcopy /E /Y /I "$(ProjectDir)configs" "$(OutDir)configs"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-audio.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /E /Y /I "$(ProjectDir)assets" "$(OutDir)assets"
+xcopy /E /Y /I "$(ProjectDir)configs" "$(OutDir)configs"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Font Include="assets\fonts\mario.otf" />
+    <Font Include="assets\fonts\megaman.ttf" />
+    <Font Include="assets\fonts\tech.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\images\attack_down.png" />
+    <Image Include="assets\images\attack_right.png" />
+    <Image Include="assets\images\attack_up.png" />
+    <Image Include="assets\images\explosion.png" />
+    <Image Include="assets\images\green\tile_bush.png" />
+    <Image Include="assets\images\green\tile_rock_bl.png" />
+    <Image Include="assets\images\green\tile_rock_bm.png" />
+    <Image Include="assets\images\green\tile_rock_br.png" />
+    <Image Include="assets\images\green\tile_rock_tl.png" />
+    <Image Include="assets\images\green\tile_rock_tm.png" />
+    <Image Include="assets\images\green\tile_rock_tr.png" />
+    <Image Include="assets\images\green\tile_tree_bl.png" />
+    <Image Include="assets\images\green\tile_tree_br.png" />
+    <Image Include="assets\images\green\tile_tree_tl.png" />
+    <Image Include="assets\images\green\tile_tree_tm.png" />
+    <Image Include="assets\images\green\tile_tree_tr.png" />
+    <Image Include="assets\images\green\tile_water_bl.png" />
+    <Image Include="assets\images\green\tile_water_bm.png" />
+    <Image Include="assets\images\green\tile_water_br.png" />
+    <Image Include="assets\images\green\tile_water_ml.png" />
+    <Image Include="assets\images\green\tile_water_mm.png" />
+    <Image Include="assets\images\green\tile_water_mr.png" />
+    <Image Include="assets\images\green\tile_water_tl.png" />
+    <Image Include="assets\images\green\tile_water_tm.png" />
+    <Image Include="assets\images\green\tile_water_tr.png" />
+    <Image Include="assets\images\item_heart.png" />
+    <Image Include="assets\images\item_sword_right.png" />
+    <Image Include="assets\images\item_sword_up.png" />
+    <Image Include="assets\images\knight.png" />
+    <Image Include="assets\images\run_down.png" />
+    <Image Include="assets\images\run_right.png" />
+    <Image Include="assets\images\run_up.png" />
+    <Image Include="assets\images\stand_down.png" />
+    <Image Include="assets\images\stand_right.png" />
+    <Image Include="assets\images\stand_up.png" />
+    <Image Include="assets\images\tektite.png" />
+    <Image Include="assets\images\tile_black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="assets\sounds\EnemyDie.wav" />
+    <Media Include="assets\sounds\EnemyHit.wav" />
+    <Media Include="assets\sounds\GetItem.wav" />
+    <Media Include="assets\sounds\LinkDie.wav" />
+    <Media Include="assets\sounds\LinkHurt.wav" />
+    <Media Include="assets\sounds\SwordSlash.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\sounds\MusicPlay.ogg" />
+    <None Include="assets\sounds\MusicTitle.ogg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Action.hpp" />
+    <ClInclude Include="include\Animation.hpp" />
+    <ClInclude Include="include\Assets.hpp" />
+    <ClInclude Include="include\Components.hpp" />
+    <ClInclude Include="include\Entity.hpp" />
+    <ClInclude Include="include\EntityManager.hpp" />
+    <ClInclude Include="include\Enums.hpp" />
+    <ClInclude Include="include\GameEngine.hpp" />
+    <ClInclude Include="include\Physics.hpp" />
+    <ClInclude Include="include\Scene.hpp" />
+    <ClInclude Include="include\SceneMenu.hpp" />
+    <ClInclude Include="include\ScenePlay.hpp" />
+    <ClInclude Include="include\Vec2.hpp" />
+    <ClInclude Include="vendor\imgui\imconfig-SFML.h" />
+    <ClInclude Include="vendor\imgui\imconfig.h" />
+    <ClInclude Include="vendor\imgui\imgui-SFML.h" />
+    <ClInclude Include="vendor\imgui\imgui-SFML_export.h" />
+    <ClInclude Include="vendor\imgui\imgui.h" />
+    <ClInclude Include="vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="vendor\imgui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Action.cpp" />
+    <ClCompile Include="src\Animation.cpp" />
+    <ClCompile Include="src\Assets.cpp" />
+    <ClCompile Include="src\Entity.cpp" />
+    <ClCompile Include="src\EntityManager.cpp" />
+    <ClCompile Include="src\GameEngine.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Physics.cpp" />
+    <ClCompile Include="src\Scene.cpp" />
+    <ClCompile Include="src\SceneMenu.cpp" />
+    <ClCompile Include="src\ScenePlay.cpp" />
+    <ClCompile Include="vendor\imgui\imgui-SFML.cpp" />
+    <ClCompile Include="vendor\imgui\imgui.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="configs\assets.txt" />
+    <Text Include="configs\level1.txt" />
+    <Text Include="configs\level2.txt" />
+    <Text Include="configs\level3.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
