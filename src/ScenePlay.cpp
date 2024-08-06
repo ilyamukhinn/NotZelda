@@ -892,7 +892,7 @@ void ScenePlay::sGUI() {
 		{
 			ImGui::Checkbox("Draw Grid",		&this->m_drawGrid);
 			ImGui::Checkbox("Draw Textures",	&this->m_drawTextures);
-			ImGui::Checkbox("Draw Debug",		&this->m_drawDebug);
+			ImGui::Checkbox("Draw Debug",		&this->m_drawCollision);
 			ImGui::Checkbox("Follow Cam",		&this->m_follow);
 
 			ImGui::EndTabItem();

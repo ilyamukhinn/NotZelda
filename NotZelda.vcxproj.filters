@@ -183,6 +183,8 @@
     <None Include="assets\sounds\MusicTitle.ogg">
       <Filter>assets\sounds</Filter>
     </None>
+    <None Include=".gitignore" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="vendor\imgui\imconfig.h">

@@ -18,7 +18,6 @@ protected:
 	bool				m_drawTextures	{ true };
 	bool				m_drawCollision	{ false };
 	bool				m_drawGrid		{ false };
-	bool				m_drawDebug		{ false };
 	bool				m_follow		{ false };
 	const Vec2f			m_gridSize		{ 64.0f, 64.0f };
 	sf::Text			m_gridText;

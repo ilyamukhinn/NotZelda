@@ -203,8 +203,10 @@ xcopy /E /Y /I "$(ProjectDir)configs" "$(OutDir)configs"</Command>
     <Media Include="assets\sounds\SwordSlash.wav" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitignore" />
     <None Include="assets\sounds\MusicPlay.ogg" />
     <None Include="assets\sounds\MusicTitle.ogg" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Action.hpp" />
